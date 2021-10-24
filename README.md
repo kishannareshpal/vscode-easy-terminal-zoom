@@ -6,8 +6,9 @@ VSCode extension to control the terminal's font-size with keyboard shortcuts whe
 
 #### Motivation
 
-<sup>By default, in order to increase/decrease the font size in VSCode is by adjusting the `terminal.integrated.fontSize` value manually.
-The other way to achieve this is by [zooming in/out the editor](https://code.visualstudio.com/docs/editor/accessibility#_zoom), which is not ideal for me, as I only needed to increase/decrease the terminal font size and not the entire editor.</sup>
+<sup>
+By default, in order to increase/decrease the font size in VS Code you need to adjust the `terminal.integrated.fontSize` value manually from settings.
+</sup>
 
 #### Included keyboard shortcuts (Keymaps)
 
@@ -18,14 +19,18 @@ The other way to achieve this is by [zooming in/out the editor](https://code.vis
 
 > Note: These keymaps are only activated for the extension when a Terminal has active focus.
 
+#### Requirements
+
+-   VS Code 1.40+
+
 #### Settings
 
 | Key                     | Description                                                                  |
 | ----------------------- | ---------------------------------------------------------------------------- |
 | `easyTerminalZoom.step` | The amount by which the font size is increased or decreased. Default is `1`. |
 
-
 #### Author
+
 Kishan Jadav • kishan_jadav@hotmail.com
 
 #### License
