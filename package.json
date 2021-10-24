@@ -2,7 +2,7 @@
     "name": "easy-terminal-zoom",
     "displayName": "Easy Terminal Zoom",
     "description": "Easily control terminal font-size using (Ctrl + = | Ctrl + -) on Windows/Linux and (Cmd + = | Cmd + -) on mac.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "kishannareshpal",
     "engines": {
         "vscode": "^1.40.0"
