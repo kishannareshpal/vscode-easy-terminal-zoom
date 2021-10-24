@@ -16,6 +16,7 @@ By default, in order to increase/decrease the font size in VS Code you need to a
 | ------------------ | ----------------------------- | ------------------------------ |
 | Increase font size | <kbd>Cmd</kbd> + <kbd>=</kbd> | <kbd>Ctrl</kbd> + <kbd>=</kbd> |
 | Decrease font size | <kbd>Cmd</kbd> + <kbd>-</kbd> | <kbd>Ctrl</kbd> + <kbd>-</kbd> |
+| Reset font size    | <kbd>Cmd</kbd> + <kbd>0</kbd> | <kbd>Ctrl</kbd> + <kbd>0</kbd> |
 
 > Note: These keymaps are only activated for the extension when a Terminal has active focus.
 
