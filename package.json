@@ -1,0 +1,72 @@
+{
+    "name": "easy-terminal-zoom",
+    "displayName": "Easy Terminal Zoom",
+    "description": "Easily control terminal font-size using (Cmd+= | Ctrl+=) on Windows/Linux and (Cmd+- | Ctrl+-) on mac.",
+    "version": "1.0.0",
+    "publisher": "kishannareshpal",
+    "engines": {
+        "vscode": "^1.61.0"
+    },
+    "categories": [
+        "Keymaps"
+    ],
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./extension",
+    "preview": false,
+    "icon": "easy_terminal_zoom.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kishannareshpal/vscode-easy-terminal-zoom.git"
+    },
+    "bugs": {
+        "url": "https://github.com/kishannareshpal/vscode-easy-terminal-zoom/issues"
+    },
+    "contributes": {
+        "configuration": {
+            "title": "Easy Terminal Zoom",
+            "properties": {
+                "easyTerminalZoom.step": {
+                    "title": "Step",
+                    "description": "The amount by which the font size is increased or decreased. Default is `1`.",
+                    "type": [
+                        "number",
+                        "string"
+                    ],
+                    "pattern": "^\\d+$",
+                    "editPresentation": "singlelineText",
+                    "default": 1,
+                    "minimum": 1
+                }
+            }
+        },
+        "commands": [
+            {
+                "command": "easyTerminalZoom.zoomIn",
+                "title": "Easy Terminal: Increase Font Size"
+            },
+            {
+                "command": "easyTerminalZoom.zoomOut",
+                "title": "Easy Terminal: Decrease Font Size"
+            }
+        ],
+        "keybindings": [
+            {
+                "mac": "Cmd+=",
+                "key": "Ctrl+=",
+                "command": "easyTerminalZoom.zoomIn",
+                "when": "terminalFocus"
+            },
+            {
+                "mac": "Cmd+-",
+                "key": "Ctrl+-",
+                "command": "easyTerminalZoom.zoomOut",
+                "when": "terminalFocus"
+            }
+        ]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    }
+}
