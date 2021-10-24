@@ -2,7 +2,7 @@
 
 ![Icon](./easy_terminal_zoom.png)
 
-![Visual Studio Code Marketplace](https://vsmarketplacebadge.apphb.com/version-short/kishannareshpal.easy-terminal-zoom.svg)
+[![Visual Studio Code Marketplace](https://vsmarketplacebadge.apphb.com/version-short/kishannareshpal.easy-terminal-zoom.svg)](https://marketplace.visualstudio.com/items?itemName=kishannareshpal.easy-terminal-zoom)
 
 VSCode extension to control the terminal's font-size with keyboard shortcuts when the terminal is focused.
 
