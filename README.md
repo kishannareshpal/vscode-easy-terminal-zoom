@@ -24,6 +24,10 @@ The other way to achieve this is by [zooming in/out the editor](https://code.vis
 | ----------------------- | ---------------------------------------------------------------------------- |
 | `easyTerminalZoom.step` | The amount by which the font size is increased or decreased. Default is `1`. |
 
+
+#### Author
+Kishan Jadav • kishan_jadav@hotmail.com
+
 #### License
 
 [MIT](./LICENSE.md)
