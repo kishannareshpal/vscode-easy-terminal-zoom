@@ -75,7 +75,7 @@ const decrement = () => {
 /**
  * Update terminal font size in pixels
  * 
- * @param {number} fontSize the font size in pixels. Maximum allowed is 100. Minimum allowed is 6.
+ * @param {number|undefined} fontSize terminal font size in pixels, between 1-100. Set {@linkcode undefined} to reset as default.
  * 
  * @returns {Thenable<void>}
  */
@@ -89,7 +89,11 @@ const activate = (context) => {
     // Extension commands to trigger certain actions
     const zoomInCommand = 'easyTerminalZoom.zoomIn';
     const zoomOutCommand = 'easyTerminalZoom.zoomOut';
+    const zoomResetCommand = 'easyTerminalZoom.zoomReset';
 
+    const zoomResetCommandHandler = () => {
+        setTerminalFontSize(undefined)
+    }
     const zoomInCommandHandler = () => {
         const incrementedFontSize = increment()
         setTerminalFontSize(incrementedFontSize)
@@ -101,6 +105,7 @@ const activate = (context) => {
     
     // Bind the commands and their actions
     context.subscriptions.push(
+        registerCommand(zoomResetCommand, zoomResetCommandHandler),
         registerCommand(zoomInCommand, zoomInCommandHandler),
         registerCommand(zoomOutCommand, zoomOutCommandHandler)
     );

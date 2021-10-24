@@ -1,7 +1,7 @@
 {
     "name": "easy-terminal-zoom",
     "displayName": "Easy Terminal Zoom",
-    "description": "Easily control terminal font-size using (Ctrl + = | Ctrl + -) on Windows/Linux and (Cmd + = | Cmd + -) on mac.",
+    "description": "Easily control terminal's font-size with keyboard shortcuts when the terminal is focused.",
     "version": "1.0.2",
     "publisher": "kishannareshpal",
     "engines": {
@@ -43,6 +43,10 @@
         },
         "commands": [
             {
+                "command": "easyTerminalZoom.zoomReset",
+                "title": "Easy Terminal: Reset Font Size"
+            },
+            {
                 "command": "easyTerminalZoom.zoomIn",
                 "title": "Easy Terminal: Increase Font Size"
             },
@@ -52,6 +56,12 @@
             }
         ],
         "keybindings": [
+            {
+                "mac": "Cmd+0",
+                "key": "Ctrl+0",
+                "command": "easyTerminalZoom.zoomReset",
+                "when": "terminalFocus"
+            },
             {
                 "mac": "Cmd+=",
                 "key": "Ctrl+=",
